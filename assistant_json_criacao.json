@@ -1,0 +1,28 @@
+moraes@iMac-de-Jose ~
+  % curl "https://api.openai.com/v1/assistants" \                                                                      !10354
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer $OPENAI_QMD_API_KEY" \
+  -H "OpenAI-Beta: assistants=v1" \
+  -d '{
+    "instructions": "You are a personal assistant. Responda sempre em portugues", 
+    "name": "barbosa_ag",
+    "tools": [{"type": "retrieval"}],
+    "model": "gpt-4-1106-preview"
+  }'
+
+{
+  "id": "asst_ModINP3FX8GJtelMTm06ZRZq",
+  "object": "assistant",
+  "created_at": 1701024047,
+  "name": "barbosa_ag",
+  "description": null,
+  "model": "gpt-4-1106-preview",
+  "instructions": "You are a personal assistant. Responda sempre em portugues",
+  "tools": [
+    {
+      "type": "retrieval"
+    }
+  ],
+  "file_ids": [],
+  "metadata": {}
+}
